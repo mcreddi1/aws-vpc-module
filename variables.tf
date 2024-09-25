@@ -6,7 +6,7 @@ variable "project_name" {
     default = "expense"
 }
 
-variable "commom_tags" {
+variable "common_tags" {
   default = {
     Project = "Terraform"
     Terraform = "True"
@@ -24,4 +24,8 @@ variable "private_subnet_cidrs" {
 
 variable "database_subnet_cidrs" {
   default = ["10.0.21.0/24", "10.0.22.0/24"]
+}
+
+variable "is_peering_required" {
+    default = true
 }
